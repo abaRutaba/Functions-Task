@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Circle Calculations</title>
+<script>
+	function calcCircumference(r)
+	{
+		C = 2*Math.PI*r;
+		console.log("The Circumference = "+C+" NN");
+		document.getElementById("para1").innerHTML = "The Circumference = "+C+" NN";
+	}
+	function calcArea(r)
+	{
+		A = Math.PI*(r*r);
+		console.log("The Area = "+A+" NN");
+		document.getElementById("para2").innerHTML = "The Area = "+A+" NN";
+	}
+</script>
+</head>
+
+<body>
+	<h2>Circle Calculations</h2>
+    
+    <p>Enter Radius</p>
+	<input type="text" id="txt1" placeholder="Enter Radius"/>
+    <br/><br/>
+    <input type="button" value="Calculate Circumference" onClick="calcCircumference(parseFloat(document.getElementById('txt1').value))"/>
+	
+    <p id="para1"></p>
+  	<input type="button" value="Calculate Area" onClick="calcArea(parseFloat(document.getElementById('txt1').value))"/>
+	<p id="para2"></p>
+ 
+ 
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Greeting User</title>
+</head>
+
+<script>
+	function greet()
+	{
+		var t1 = document.getElementById("t1").value;
+		var t2 = document.getElementById("t2").value;
+		
+		document.body.innerHTML="";
+		document.body.style.paddingTop = "300px";
+		document.body.style.textAlign = "center";
+		
+		//main logic
+		var str = "Welcome "+t1+" "+t2;
+		
+		//styling
+		document.body.style.fontSize="50px";
+		document.body.innerHTML =str.bold();
+		//document.body.innerHTML = "Welcome "+t1+" "+t2;
+		document.body.style.backgroundImage = "url('pic.gif')";
+		document.body.style.backgroundRepeat = "no-repeat" ;
+		document.body.style.backgroundSize = "cover";
+		
+		//document.getElementById("p2").style.color = "blue";
+	}
+</script>
+<body id="bg">
+<p id="para1">Enter your 1st Name</p>
+<input type="text" id ="t1" placeholder="First Name">
+
+<p id="para2">Enter your 2st Name</p>
+<input type="text" id ="t2" placeholder="Second Name">
+<br/><br/>
+<input type="button" value="OK" onClick="greet()">
+</body>
+</html>

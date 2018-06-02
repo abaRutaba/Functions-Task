@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+<script>
+	function range(a,b)
+	{
+		console.log("Range Between "+a+"and "+b+"is");
+		document.getElementById("para").innerHTML = "Range Between "+a+"and "+b+" is ";
+		for (var i=a;i<=b;i++)
+		{
+			console.log(i);
+			document.getElementById("para").innerHTML += i+" ";
+		}
+	}
+</script>
+</head>
+
+<body>
+<h1>Counting</h1>
+<p>Give your Range </p>
+<input type="text" id="txt1" placeholder="Enter Starting Number"/>
+<input type="text" id="txt2" placeholder="Enter Ending Number"/>
+<input type="button" value="Print" onClick="range(parseInt(document.getElementById('txt1').value), parseInt(document.getElementById('txt2').value))"/>
+<p id="para"></p>
+
+</body>
+</html>

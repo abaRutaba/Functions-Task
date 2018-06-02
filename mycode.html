@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>My code</title>
+<script>
+ 	function run(ans)
+	{
+		document.getElementById("demo").innerHTML=ans ;
+	}
+</script>
+</head>
+
+<body>
+<h2>Block of code used several times</h2>
+<input type="text" id="txt" placeholder="Enter any thing here"/>
+<input type="button"  value="OK" onClick="run(document.getElementById('txt').value)" />
+<p id="demo"></p>
+</body>
+</html>

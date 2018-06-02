@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Factorial</title>
+<script>
+	function fact(a)
+	{
+		var f = 1 ;
+		
+		for (var i=a;i>=1;i--)
+		{
+			f*=i;
+
+		}
+		console.log("Factorial of "+a+"= "+f);
+		document.getElementById("para").innerHTML = "Factorial of "+a+"= "+f;
+	}
+</script>
+</head>
+
+<body>
+<h1>Factorial</h1>
+<input type="text" id="txt" placeholder="Enter Number here"/>
+<input type="button" value="Factorial" onClick="fact(parseInt(document.getElementById('txt').value))"/>
+<p id="para"></p>
+</body>
+</html>
